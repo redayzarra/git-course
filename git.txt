@@ -43,6 +43,22 @@ $ git reset .             // Resets everything in the directory the command line
 
 $ git checkout -- <file>  // Removes any changes you have made from the working area
 
-$ git checkout -- folder/   // Removes any changes for an entire folder
+$ git checkout -- <folder>/   // Removes any changes for an entire folder
 
 $ git checkout -- .       // Removes all changes you have made
+
+
+VIEWING PREVIOUS COMMITS:
+
+$ git checkout <commit hash>      // Allows you to view a previous commit
+
+$ git checkout <branch>   // View the latest commit on the branch
+
+
+RESTORING A PREVIOUS COMMIT:
+
+$ git checkout <hash or branch> <file>    // Restores the code in the file back to its previous commit
+
+$ git checkout <hash or branch> <folder>/       // Restores all the files in a folder to the previous commit
+
+$ git checkout <hash or branch> .         // Restores all files in the project
