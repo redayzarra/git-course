@@ -62,3 +62,15 @@ $ git checkout <hash or branch> <file>    // Restores the code in the file back 
 $ git checkout <hash or branch> <folder>/       // Restores all the files in a folder to the previous commit
 
 $ git checkout <hash or branch> .         // Restores all files in the project
+
+
+CREATING SHORTCUTS, IGNORING FILES, AND REMOVING Git
+
+$ git config --global alias.shortcut <command>    // Creates a shortcut for a command
+
+.gitignore files      // List the files and folders you don't want Git to track in here
+
+$ rm -rf .git         // Removes git from the project
+
+
+GITHUB COMMANDS:
