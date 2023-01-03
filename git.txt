@@ -8,11 +8,11 @@ $ git status              // Check the status of the working tree, so we can see
 
 $ git add <file name>     // Adds files to index, we can add as many files as we like before committing
 
-$ git add <folder>/       // Adds the entire folder to the staging area
+$ git add <folder>/       // Adds the entire folder to the staging area, converts changes from working area to staging area
 
 $ git add .               // Adds everything in the directory we are in to the staging area
 
-$ git commit -m "msg"     // Commit changes takes all the changes from the staging area and puts it into the local repository along with a message to explain what the changes are
+$ git commit -m "msg"     // Commit changes takes all the changes from the staging area and puts it into the commit history of the local repository along with a message to explain what the changes are
 
 $ git commit -m "msg" --amend       // Updates the previous commit instead of making a new commit, replaces the latest commit
 
@@ -26,10 +26,10 @@ $ git log --all           // Shows all the commits from all branches
 $ git log --all --graph   // Visualize the working tree and see all the branches
 
 
-REMOTE COMMANDS:
+CONFIGURE NAME AND EMAIL FOR COMMITS:
 
-$ git remote add origin <github repo url>       // Links the remote repo to the local repo so you can perform push and pull commands
+$ git config --global user.name "Your Name"       // Configures and stores your name so that information shows up when you are making commits
 
-$ git push origin master  // Pushes the origin to the remote repo
+$ git config --global user.email "Email@gmail.com"       // Stores your email so that shows up when you make commits
 
-$ git pull origin master  // Pulls the latest changes from the remote repository 
+$ git reset <file name>   // Brings a file back from the staging area to the working area
