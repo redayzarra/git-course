@@ -91,3 +91,13 @@ $ git branch          // Lists all available branches
 
 $ git push origin main --set-upstream   // Sets up a shortcut that allows you to just type "git push" and Git will automatically push the main branch to origin
 
+
+DOWNLOADING FROM GITHUB COMMANDS:
+
+$ git clone <url>     // Downloads a copy of the remote repository from the url
+
+$ git clone <url> <folder>      // Downloads a copy from the remote repository and stores it in the specified folder
+
+$ git fetch           // Updates all the remote tracking branches to show what the branch looks like in the remote repository
+
+$ git pull <remote_name> <branch>       // Downloads the local branch with any updates from the remote repository
