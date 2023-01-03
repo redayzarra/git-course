@@ -1,3 +1,14 @@
 Just storing notes on basic Git commands and what to do in certain situations.
 
-$ git init - Initializes the local git repository
+BASIC COMMANDS:
+
+$ git init                // Initializes the local git repository
+
+$ git add <file name>     // Adds files to index, we can add as many files as we like before committing
+
+$ git status              // Check the status of the working tree, so we can see what changes have been made\
+
+$ git commit              // Commit changes takes all the changes from the staging area and puts it into the local repository
+
+
+
