@@ -1,0 +1,3 @@
+Just storing notes on basic Git commands and what to do in certain situations.
+
+$ git init - Initializes the local git repository
