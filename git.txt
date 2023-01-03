@@ -32,4 +32,17 @@ $ git config --global user.name "Your Name"       // Configures and stores your 
 
 $ git config --global user.email "Email@gmail.com"       // Stores your email so that shows up when you make commits
 
+
+RESETTING AND REMOVING CHANGES:
+
 $ git reset <file name>   // Brings a file back from the staging area to the working area
+
+$ git reset folder/       // Resets the entire folder and brings it from the staging area back to the working area
+
+$ git reset .             // Resets everything in the directory the command line is pointing to
+
+$ git checkout -- <file>  // Removes any changes you have made from the working area
+
+$ git checkout -- folder/   // Removes any changes for an entire folder
+
+$ git checkout -- .       // Removes all changes you have made
