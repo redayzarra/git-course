@@ -64,7 +64,7 @@ $ git checkout <hash or branch> <folder>/       // Restores all the files in a f
 $ git checkout <hash or branch> .         // Restores all files in the project
 
 
-CREATING SHORTCUTS, IGNORING FILES, AND REMOVING Git
+CREATING SHORTCUTS, IGNORING FILES, AND REMOVING GIT
 
 $ git config --global alias.shortcut <command>    // Creates a shortcut for a command
 
@@ -73,4 +73,21 @@ $ git config --global alias.shortcut <command>    // Creates a shortcut for a co
 $ rm -rf .git         // Removes git from the project
 
 
-GITHUB COMMANDS:
+UPLOADING TO GITHUB COMMANDS:
+
+$ git remote add <remote_name> <url>      // Connects the local repository to the remote repository and assigns a name for the link. We usually use origin for the name
+
+$ git remote          // Lists all the remote repositories that are linked
+
+$ git remote -v       // Lists all the remote repositories in greater detail
+
+$ git remote remove <remote_name>       // Removes the connection between a local and remote repository
+
+$ git config -- global credential.username <username>       // Configures your GitHub username so you can access your repositories
+
+$ git push <remote_name> <branch>       // Uploads the branch from your local repository to your remote repository
+
+$ git branch          // Lists all available branches
+
+$ git push origin main --set-upstream   // Sets up a shortcut that allows you to just type "git push" and Git will automatically push the main branch to origin
+
